@@ -1,0 +1,173 @@
+ *{
+            outline:none;
+        }
+        body {
+            perspective-origin: top;
+        }
+        .circle {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, .03);
+            margin: 50px auto;
+            border: 4px solid #888;
+            position: relative;
+            margin-bottom: 0px;
+        }
+        .onEvent {
+            animation: marw7a .6s linear infinite;
+            -webkit-animation: marw7a .6s linear infinite;
+            animation-play-state: running;
+            -webkit-animation-play-state: running;
+        }
+        .offEvent {
+            animation-play-state: paused;
+            -webkit-animation-play-state: paused;
+        }
+        .circle .dom {
+            position:absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #555;
+            left: 40%;
+            top: 40%;
+        }
+        .circle .hand1 {
+            width: 30px;
+            height: 105px;
+            background-color: #555;
+            margin: 100px auto;
+            transform: rotate(80deg);
+            position: absolute;
+            top: -17%;
+            left: 170px;
+            border-top-left-radius: 20%;
+            border-top-right-radius: 20%
+        }
+        .circle .hand2 {
+            width: 30px;
+            height: 105px;
+            background-color: #555;
+            margin: 100px auto;
+            transform: rotate(190deg);
+            position: absolute;
+            top: 15%;
+            left: 95px;
+            border-top-left-radius: 20%;
+            border-top-right-radius: 20%
+        }
+        .circle .hand3 {
+            width: 30px;
+            height: 105px;
+            background-color: #555;
+            margin: 100px auto;
+            transform: rotate(310deg);
+            position: absolute;
+            top: -30%;
+            left: 60px;
+            border-top-left-radius: 20%;
+            border-top-right-radius: 20%;
+        }
+        @keyframes marw7a {
+            0%{
+                transform: rotate(0)
+            }
+            100%{
+                transform: rotate(360deg)
+            }
+        }
+        @-webkit-keyframes marw7a {
+            0%{
+                transform: rotate(0)
+            }
+            100%{
+                transform: rotate(360deg)
+            }
+        }
+        .stick {
+            width: 25px;
+            height: 175px;
+            background-color: #555;
+            margin: 0px auto;
+            position: relative
+        }
+        .stick .speed-btns button {
+            display: block;
+            position: absolute;
+        }
+        .stick .speed-button {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            left: 3px;
+            font-weight:900;
+            font-size: 10px;
+            color: #555;
+            margin-top: 20px;
+            background-color: #EEE;
+            text-align: center;
+            padding-left: 4px;
+        }
+        .btn-clicked {
+            transform: scale(.8);
+        }
+        .stick .speed-btns #speed1 {
+            top: 5px;
+        }
+        .stick .speed-btns #speed2 {
+            top: 33px;
+        }
+        .stick .speed-btns #speed3 {
+            top: 60px;
+        }
+        .stick .speed-btns #speed4 {
+            top: 86px;
+        }
+        .stick .speed-btns #speed5 {
+            top: 113px;
+        }
+        .speed1-event {
+            animation: marw7a .2s linear infinite;
+            animation-play-state: running
+        }
+        .speed2-event {
+            animation: marw7a .35s linear infinite;
+            animation-play-state: running
+        }
+        .speed3-event {
+            animation: marw7a .5s linear infinite;
+            animation-play-state: running
+        }
+        .speed4-event {
+            animation: marw7a .65s linear infinite;
+            animation-play-state: running
+        }
+        .speed5-event {
+            animation: marw7a .8s linear infinite;
+            animation-play-state: running
+        }
+        .square {
+            width: 230px;
+            height: 110px;
+            background-color: #555;
+            margin: 0px auto;
+            border-radius: 20px;
+            position: relative;
+        }
+        #btns {
+            position: absolute;
+            left: 50px;
+            top: 35px
+        }
+        #btns .btn {
+            width: 55px;
+            height: 33px;
+            font-size: 15px;
+            font-weight: 700;
+            margin-left: 5px;
+            background-color: #EEE;
+            border: 1px solid #888;
+            cursor: pointer;
+            color: #444
+        }
